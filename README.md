@@ -1,4 +1,4 @@
-# 1-uzduotis
+# 1-uzduotis (v0.1)
 
 1) Pagal aprašytus užduoties reikalavimus realizuokite programą, kuri nuskaito vartotojų įvedamus reikiamus duomenis (patogiausiai naudoti struktūrą):
 a) studento vardą ir pavardę;
