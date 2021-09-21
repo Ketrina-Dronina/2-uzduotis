@@ -11,6 +11,4 @@ Baigus duomenų įvedimą, suskaičiuoja galutinį balą ir juos pateikia į ekr
 a) tradicinį dinaminį C  masyvą.
 b) std::vector tipo konteinerį.
 
-Atliekant šią užduotį galite sukurti du atskirus (*.cpp) failus (arba du projektus), tačiau nuo versijos v0.2 naudosime tik realizaciją su vector'iais.
-
 4) Papildykite programą taip, kad būtų galimybė, jog mokinio gautieji balai už namų darbus bei egzaminą būtų generuojami atsitiktinai.
