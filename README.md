@@ -1,22 +1,66 @@
-# 1-uzduotis
+# 1-uzduotis (v1.0)
+Optimizuokite studentų rūšiavimo (dalijimo) į dvi kategorijas realizaciją: t.y. visiems trims konteinerių tipams (vector, deque, list) išmatuokite programos veikimo spartą priklausomai nuo studentų dalijimo į dvi kategorijas strategijos:
+- 1 strategija: Bendro studentai konteinerio (vector ir list tipų) skaidymas (rūšiavimas) į du naujus to paties tipo konteinerius: "vargšiukų" ir "kietiakų". Tokiu būdu tas pats studentas yra dvejuose konteineriuose: bendrame studentai ir viename iš suskaidytų (vargšiukai arba kietiakai).
+- 2 strategija: Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį: "vargšiukai".
+# Programos veikimo sparta
+![Untitled](https://user-images.githubusercontent.com/91048600/142675212-c75f2737-4167-4c47-84e9-d6129e5c01bb.png)
 
-Parašykite programą, kuri nuskaito šiuos studentų duomenis:
-a) vardą ir pavardę.
-b) n atliktų namų darbų (nd) rezultatus (10-balėje sistemoje), o taip pat egzamino (egz) rezultatą.
+# Įdiegimo ir naudojimo instrukcija
+Įdiegimas (1 būdas)
 
-Tuomet iš šių duomenų, suskaičiuoja galutinį balą (galutinis): Galutinis = 0.4 * vidurkis + 0.6 * egzaminas.
+Windows naudotojams:
+mingw32-make -f MakeFileWin
+MacOS, Linux ar kitos UNIX sistemos naudotojams:
+make -f MakeFile
 
-# Užduoties vertinimo kriterijai
-Galutinai repozitorijoje turi būti paskelbti 6 releas'ai: v0.1, v0.2, v0.3, v0.4, v0.5 ir v1.0.
+Įdiegimas (2 būdas)
 
-Iki versijos (v0.5) svarbiausia, kad Jūsų programos atliktų tai, kas yra prašoma užduotyse. Jeigu yra prašomą kažką panaudoti, pvz. antraštės (header) failus, iššimtis (exceptions) ir pan. - vadinasi juos ir turite panaudoti Jūsų realizacijose. Tačiau tikrai nebus baudžiama už tai, jeigu Jūsų realizacijos nebus labai efektyvios ar "modernios" - tą mes mokysimės ir tobulėsime viso kurso (kaip ir tolesnio gyvenimo) metu - svarbu daryti savarankiškai, tačiau diskutuoti su kolegomis ir dėstytojais drąsiai!
+- Iš skilties "releases" pasirinkti norimą programos versiją ir atsisiųsti
+- Atsisiųstą kodą sukompiliuoti per komandinę eilutę (CMD) arba naudojamu IDE (g++ -o programa main.cpp functions.cpp)
+- Paleisti gautą vykdomąjį failą (.exe)
+(./programa
+Arba tiesiog atidaryti .exe failą tame aplanke kur atsisiuntėte programą)
 
-Tuomet natūralus klausimas - o už ką gi bus baudžiama, jeigu yra svarbu tik kad veiktų? Ogi bus baudžiama už tai, jeigu veiks "bug'ovai" ? Pvz.:
+Naudojimas
 
-Kas nutiktų, jeigu ten kur reikia "rankomis" suvesti duomenis aš vietoj balo įvedu kažkokį kitą simbolį, pvz. "s" raidę? Ar Jūsų programa "neužlūžtų"? Juk natūralu, kad taip neturėtų įvykti, o programa tiesiog turėtų informuotų apie situaciją ir pagal ją priimtų atitinkamą sprendimą.
-Kas nutiktų, jeigu neįvesčiau nė vieno namų darbų? Ar nesigautų dalyba iš nulio?
-Kas nutiktų, jeigu studentų duomenų failas neegzistuoja? Arba jame toje vietoje kur turi būti namų darbų/egzamino balai, būtų ne skaičius, o koks nors kitas simbolis, pvz. "s" raidė?
-Bus vertinamas pačio darbo ir rezultatų apipavidalinimas, t.y.:
+- Paleidus failą iš pradžių pasirinkti ar norima sugeneruoti duomenis automatiškai ir nuskaityti ar įvesti duomenis pačiam, nuskaityti iš failo.
+- Jei pasirinkta generuoti ir nuskaityti automatiškai, galimas pasirinkimas ar generuoti naują failą ar pereiti prie failo nuskaitymo.
+- Jei pasirinkta sugeneruoti naujus failus pasirenkame kokio dydžio failą generuoti.
+- Jei pasirenkama negeneruoti failo pereinama prie nuskaitymo, pasirenkame į kokio tipo konteinerį nuskaityti failą, tuomet pasirenkame kokio dydžio failą nuskaityti.
+- Pasirinkus įvesti pačiam, įvesti studento vardą ir pavardę.
+- Toliau atsakyti į programos užklausas įvedant t- TAIP, n- NE.
+- Pasirinkti ar norime, jog galutinis pažymis būtų skaičiuojamas kaip mediana - t, jei norime jog būtų išvestas vidurkis - n. 
 
-Kiekvienai versijai turi būti padarytas atskiras releas'as, o įvairūs efektyvumo tyrimai būtų išsamiai aprašyti ir pakomentuoti Jūsų repozicijos README.md faile.
-Galiausiai, bus atsižvelgiama į suplanuotų darbų atlikimo grafiko, t.y. bus baudžiama: už nustatytų terminų nesilaikymą.
+# Versijos
+# v0.1
+Programa, kuri nuskaito vartotojų įvedamus reikiamus duomenis: a) studento vardą ir pavardę; b) namų darbų ir egzamino rezultatą. Baigus duomenų įvedimą, suskaičiuoja galutinį balą ir j5 pateikia į ekraną dviejų skaičių po kablelio tikslumu.
+- Papildyta programa: vietoj vidurkio galutinio balo skaičiavimui būtų galima naudoti ir medianą.
+- Papildykite programa: namų darbų skaičius (n) yra nežinomas iš anksto, t.y. tik įvedimo metu vartotojas nusprendžia kuomet jis jau įvedė visų namų darbų rezultatus. Ši dalis realizuota ̨dviem būdais, kur namų darbų rezultatus saugant į: a) tradicinį dinaminį C masyvą. b) std::vector tipo konteinerį.
+- Papildykite programa: studento gautieji balai už namų darbus bei egzaminą būtų generuojami atsitiktinai.
+
+![DA](https://user-images.githubusercontent.com/91048600/142658525-4d011c33-9548-4ed4-862d-9df922b633e8.png)
+![image](https://user-images.githubusercontent.com/91048600/142658909-a63de670-6610-4892-9d43-229683bb2697.png)
+# v0.2
+- Papildykite programos versiją (v0.1) taip, kad būtų galima duomenis ne tik įvesti bet ir nuskaityti iš failo.
+Reikalavimai output’ui: studentai turi būti surūšiuoti pagal vardus (ar pavardes) ir visi stulpeliai būtų gražiai "išlygiuoti".
+![Untitled](https://user-images.githubusercontent.com/91048600/142659449-4611c59e-a7c9-4fbb-97b8-9ae966c58b6e.png)
+# v0.3
+Programoje naudojamos struct'ūros.
+- Funkcijas, naujus duomenų tipus (struct’ūras) perkelkite į antraštinius (angl. header (*.h)) failus, t.y. tokiu būdu turėtumete sukurtame projekte turėti kelis *.cpp failus, kaip ir kelis *.h failus.
+- Kur tikslinga, bent minimaliai panaudokite išimčių valdymą (angl. Exception Handling).
+
+![Untitled](https://user-images.githubusercontent.com/91048600/142659971-1a4c82c9-6ade-4d22-92a7-339f51d3e9e0.png)
+# v0.4
+- Sugeneruoti penkis atsitiktinius studentų sąrašų failus, sudarytus iš: 1 000, 10 000, 100 000, 1 000 000, 10 000 000 įrašų.
+- Surusiuokite (padalinkite) studentus į dvi kategorijas: a) Studentai, kurių galutinis balas < 5.0 galėtume vadinti “vargšiukai”, “nuskriaustukai” ir pan. b) Studentai, kurių galutinis balas >= 5.0 galėtume vadinti "kietiakiai", "galvočiai" ir pan.
+- Surūšiuotus studentus išveskite į du naujus failus.
+- Atlikite programos veikimo greičio (spartos) analizę: a)failų kūrimą; b)duomenų nuskaitymą iš failų; c)studentų rūšiavimą į dvi grupes/kategorijas; d)surūšiuotų studentų išvedimą į du naujus failus.
+![Untitled](https://user-images.githubusercontent.com/91048600/142661176-91b168fc-dca9-4dee-95c3-59939f9f2adb.png)
+# v0.5
+Konteinerių testavimas: Išmatuokite patobulintos v0.4 realizacijos veikimo spartą priklausomai nuo naudojamo vieno iš dvejų konteinerių: std::vector, std::list.
+- Duomenų nuskaitymas iš failų; studentų rūšiąvimą į dvi grupes/kategorijas; Testavimas atliekamas su tais pačiais failais iš 1000, 10000, 100000, 1000000, 10000000 įrašų. Visi rezultatai turi būti apdoroti ir aprašyti readme.md faile, pateikiant testavimo sistemos parametrus (CPU, RAM, HDD (magnetinis, SSD)).
+![Untitled](https://user-images.githubusercontent.com/91048600/142664648-4238cb96-5d07-40cd-a331-7a8191497db4.png)
+# v1.0
+Optimizuokite studentų rūšiavimo (dalijimo) į dvi kategorijas realizaciją: t.y. visiems trims konteinerių tipams (vector, deque, list) išmatuokite programos veikimo spartą priklausomai nuo studentų dalijimo į dvi kategorijas strategijos:
+- 1 strategija: Bendro studentai konteinerio (vector ir list tipų) skaidymas (rūšiavimas) į du naujus to paties tipo konteinerius: "vargšiukų" ir "kietiakų". Tokiu būdu tas pats studentas yra dvejuose konteineriuose: bendrame studentai ir viename iš suskaidytų (vargšiukai arba kietiakai).
+- 2 strategija: Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį: "vargšiukai".
