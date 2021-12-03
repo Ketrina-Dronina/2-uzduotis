@@ -7,3 +7,6 @@ Palyginkite abiejų Jūsų programų: naudojančios struct iš ankstesniojo darb
 Atlikite eksperimentinę analizę priklausomai nuo kompiliatoriaus optimizavimo lygio, nurodomo per flag'us: O1, O2, O3 ir papildykite README.md failą gautais rezultatais su optimizavimo flag'ais.
 
 Padarykite v1.1 releasą pagal ankstesniame darbe aprašytus reikalavimus.
+
+# Struct prieš Class naudojant vektorius programos veikimo sparta pagal 1 strategija
+![Untitled](https://user-images.githubusercontent.com/91048600/144633878-9e8abe3d-bea7-4900-8b7d-3e1db84b7e80.png)
