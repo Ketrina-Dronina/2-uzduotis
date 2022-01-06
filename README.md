@@ -1,10 +1,12 @@
-# 2-uzduotis (v1.5)
+# 2-uzduotis (v2.0)
 
-Sukurta bazinė klasė žmogus, kuri laiko vardą ir pavardę.
+Sukurkite dokumentaciją panaudojant Doxygen. Įkelkite dokumentaciją (kaip atskirą doxygen HTML katalogą) į repoziciją.
+Realizuokite Unit Testus naudodami Jums labiausiai patinkantį C++ Unit testų framework'ą. Užtenka pademonstruoti, kad supratote, kam jie reikalingi, t.y. užtenka kelių testų. (nebūtinai tūri būti realizuota, jei kas realizavo gaus papildomą tašką)
 
-# Programos veikimo sparta
+Galutinėje versijoje turi būti pateikta:
+Tvarkinga github repozicija, kurioje būtų tik Jūsų kurti (source) failai, t.y. jokių naudojamo IDE "šiukšlių".
+README.md faile aprašyti visi releasai, bei pakomentuoti gauti rezultatai.
+Parengta naudojimosi instrukcija, t.y. pagrindiniai žingsniai aprašyti tame pačiame README.md faile.
+Parengta įdiegimo instrukcija, t.y. paruoštas make Makefile (Unix OS atveju) arba cmake CMakeLists.txt (bet kokiai OS).
 
-                      1000    10000   100000   1000000   10000000
-      Nuskaitymas   0,004s   0,042s   0,453s    3,311s     51,88s
-      Filtravimas       0s   0,015s   0,176s    2,241s     33,19s
-      Rūšiavimas        0s   0,001s   0,021s    0,180s     3,040s
+
