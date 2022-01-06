@@ -1,4 +1,4 @@
-# 2-uzduotis (v1.1)
+# 2-uzduotis (v1.2)
 
 Realizuokite visus reikiamus (realizuokitė "Rule of three") ir tinkamus (turinčius prasmę) ir tik šiuos operatorius Jūsų turimai Studentas klasei.
 
